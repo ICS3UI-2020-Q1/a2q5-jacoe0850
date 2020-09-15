@@ -11,24 +11,23 @@ public class Main {
    */
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
+    // Asking for integer
     System.out.println("Please enter a number to play FizzBuzz");
-   
+   // creating variable
     int num = input.nextInt();
-    int num3 = num%3;
-    int num5 = num%5;
-  if (num3+num5 >= 2){
-      System.out.println(num);
-      if (num3 < 1){
-      System.out.println("fizz");
-      } else if (num5 < 1){
-      System.out.println("buzz");
-      } else if (num3 + num5 < 1){
-      System.out.println("fizzbuzz");
-    
+    // creating answer for each scenario
+  if (num%3 != 0 && num%5 != 0){
+      System.out.println("You should say " + num);
+      } else if (num%3 + num%5  < 1){
+      System.out.println("You should say FizzBuzz");
+      } else if (num%5 < 1){
+      System.out.println("You should say Buzz");
+      } else if (num%3 < 1){
+      System.out.println("You should say Fizz");
   
   }
   }
 }
-}
+
   
   
