@@ -12,16 +12,23 @@ public class Main {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     System.out.println("Please enter a number to play FizzBuzz");
+   
     int num = input.nextInt();
     int num3 = num%3;
     int num5 = num%5;
   if (num3+num5 >= 2){
       System.out.println(num);
-      } else if (num5 >= 1){
+      if (num3 < 1){
       System.out.println("fizz");
-      } else if (num3 = 0){
+      } else if (num5 < 1){
       System.out.println("buzz");
-      } else if (num3 + num5 = 0){
+      } else if (num3 + num5 < 1){
       System.out.println("fizzbuzz");
+    
+  
+  }
   }
 }
+}
+  
+  
